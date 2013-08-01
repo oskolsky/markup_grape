@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+
+    <title>Grape / Contacts</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/application.css">
+    <link rel="stylesheet" href="/css/layers/project/inner.css">
+
+    <script src="/js/vendor/jquery-1.8.3.min.js"></script>
+    <script src="/js/vendor/jquery.fittext.js"></script>
+    <script src="/js/jquery.extensions.js"></script>
+    <script src="/js/project.js"></script>    
+
+  </head>
+
+  <body>
+
+    <header id="header" class="header" role="main">
+      <div class="container clearfix">
+        <div class="f-l"><a href="/"><img src="/img/logo.png" alt="Grape" width="260"></a></div>
+        <nav class="header-nav f-r">
+          <a href="/about.html" class="header-nav_i">About us</a>
+          <a href="http://grapeapp.tumblr.com/" class="header-nav_i">Blog</a>
+          <a href="/terms.html" class="header-nav_i">Terms</a>
+          <a href="/support.html" class="header-nav_i">Support</a>
+          <span class="header-nav_i header-nav_i__current">Contact us</span>
+        </nav>
+      </div>
+    </header>
+
+    <section id="section" class="section" role="main">
+      <div class="container">
+        <div class="cnt">
+
+          <h1>Contact us</h1>
+          <form action="/feedbacks.json" id="feedback-form" method="post">
+            <div class="control">
+              <label>
+                Your name
+                <span>(required)</span>
+              </label>
+              <input name="feedback[username]" type="text">
+            </div>
+            <div class="control">
+              <label>
+                Your e-mail address
+                <span>(required)</span>
+              </label>
+              <input name="feedback[email]" type="text">
+            </div>
+            <div class="control">
+              <label>
+                Inquiry type
+                <span>(required)</span>
+              </label>
+              <div class="select">
+                <div class="select_title">Please, select one</div>
+                <dl class="select_dropdown">
+                  <dd>
+                    <a href="#">Please, select one</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Bug report/Technical Issue</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Sms-veriffication Issue</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Press/Media request</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Partnership</a>
+                  </dd>
+                  <dd>
+                    <a href="#">Other</a>
+                  </dd>
+                </dl>
+                <div class="select_controls"></div>
+                <input class="select_hidden" name="feedback[type]" type="hidden">
+              </div>
+            </div>
+            <div class="control">
+              <label>
+                Subject
+                <span>(required)</span>
+              </label>
+              <input name="feedback[subject]" type="text">
+            </div>
+            <div class="control">
+              <label>
+                Message
+                <span>(required)</span>
+              </label>
+              <textarea name="feedback[message]"></textarea>
+            </div>
+            <div class="control submit" id="feedback-form-submit">
+              <input type="submit" value="Send">
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer_copyright">&copy; 2013 Grape</div>
+      </div>
+    </footer>
+
+  </body>
+  
+</html>

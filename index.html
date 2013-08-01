@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+
+    <title>Grape</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="icon" href="/img/favicon.ico">
+
+    <link rel="stylesheet" href="/css/application.css">
+    <link rel="stylesheet" href="/css/layers/project/index.css">
+    
+    <script src="/js/vendor/jquery-1.8.3.min.js"></script>
+    <script src="/js/vendor/jquery.fittext.js"></script>
+    <script src="/js/vendor/froogaloop.min.js"></script>
+    <script src="/js/jquery.extensions.js"></script>
+    <script src="/js/images.js"></script>
+    <script src="/js/control.js"></script>
+    <script src="/js/project.js"></script>
+
+  </head>
+
+  <body class="page_index" style="visibility: hidden;">
+
+    <div class="bg bg__1"></div>
+    <div class="bg bg__2" style="display: none;"></div>
+    <div class="bg bg__3" style="display: none;"></div>
+    <div class="bg bg__4" style="display: none;"></div>
+
+    <section id="section" class="section" role="main">
+
+      <div class="viewport">
+
+        <div class="block block__3">
+          <section class="content">
+            <header><img src="/img/logo.png" alt="Grape" width="49%"></header>
+            <article class="content_article" data-section="1">
+              <p>Meet&nbsp;up&nbsp;with&nbsp;your&nbsp;friends and&nbsp;make&nbsp;it&nbsp;happen.</p>
+              <p>More&nbsp;fun,&nbsp;less&nbsp;planning.</p>
+              <p>Get&nbsp;togetherand&nbsp;go!</p>
+            </article>
+            <article class="content_article" data-section="2" style="display: none;">
+              <p>See&nbsp;what&nbsp;your&nbsp;friends&nbsp;are up&nbsp;to&nbsp;and&nbsp;get&nbsp;in&nbsp;on&nbsp;the&nbsp;action.</p>
+              <p>Old&nbsp;-&nbsp;school&nbsp;friends, new&nbsp;-&nbsp;school&nbsp;technology.</p>
+            </article>
+            <article class="content_article" data-section="3" style="display: none;">
+              <p>Be&nbsp;on&nbsp;time&nbsp;for&nbsp;arriving fashionably&nbsp;late.</p>
+              <p>Real&nbsp;time&nbsp;maps&nbsp;and&nbsp;GPS tracking&nbsp;keep&nbsp;you&nbsp;on&nbsp;time.</p>
+            </article>
+            <article class="content_article" data-section="4" style="display: none;">
+              <p>Don't&nbsp;wither&nbsp;on&nbsp;the&nbsp;vine.</p>
+              <p>Chat&nbsp;with&nbsp;your&nbsp;friends&nbsp;and spice&nbsp;up&nbsp;your&nbsp;emotions with&nbsp;unique&nbsp;emotostickers.</p>
+            </article>
+            <footer class="content_footer">
+              <img src="/img/icon.png" alt="Grape" width="10%" class="content_img va-t">
+              <img src="/img/comming-soon.png" alt="Grape" width="20%" class="content_img comming-soon va-m">
+              <img src="/img/video.png" alt="Grape" width="16%" class="content_img va-t video-thumb video-open">
+            </footer>
+          </section>
+        </div>
+
+        <div class="block block__1">
+          <aside class="phone">
+            <div class="phone_screen phone_screen__1" data-screen="1"></div>
+            <div class="phone_screen phone_screen__2" style="display: none;" data-screen="2"></div>
+            <div class="phone_screen phone_screen__3" style="display: none;" data-screen="3"></div>
+            <div class="phone_screen phone_screen__4" style="display: none;" data-screen="4"></div>
+          </aside>
+        </div>
+
+      </div>
+
+      <div class="controls">
+        <div class="control control_prev"></div>
+        <div class="control control_next"></div>
+      </div>
+
+    </section>
+
+    <footer class="footer" role="contentinfo">
+      <nav class="footer-nav">
+        <a href="/about.html" class="footer-nav_a">About us</a>
+        <a href="http://grapeapp.tumblr.com/" class="footer-nav_a">Blog</a>
+        <a href="/terms.html" class="footer-nav_a">Terms</a>
+        <a href="/support.html" class="footer-nav_a">Support</a>
+        <a href="/contact.html" class="footer-nav_a">Contact us</a>
+        <span class="footer_copyrigt">&copy; 2013 Grape</span>
+      </nav>
+    </footer>
+
+    <div class="overlay"></div>
+
+    <div class="video">
+      <a href="#" class="video_close"><img src="/img/blank.gif" alt="Close" class="ico-24 ico-24__close"></a>
+      <iframe src="http://player.vimeo.com/video/60821860?title=0&byline=0&portrait=0&color=ffffff&api=1" width="800" height="459" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen id="video_frame"></iframe>
+    </div>
+
+    <script type="text/javascript">
+    
+      // Vimeo API
+      var iframe = $('#video_frame')[0],
+          player = $f(iframe);
+
+      // When the player is ready, add listeners for pause, finish, and playProgress
+      player.addEvent('ready', function() {
+        player.addEvent('pause', onPause);
+      });
+
+      // Video close
+      $('.video_close, .overlay').click(function() {
+        $('.video, .overlay').hide();
+        player.api('pause');
+        return false;
+      });
+
+      // Video open
+      $('.video-open').click(function() {
+        $('.video, .overlay').show();
+        return false;
+      });
+
+      // Fittext
+      $(".content").fitText(1.5);
+
+    </script>
+
+  </body>
+  
+</html>

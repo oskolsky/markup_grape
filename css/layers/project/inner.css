@@ -1,0 +1,175 @@
+/* Body
+---------------------------------------------------------------------------------*/
+body {
+  background: url(/img/bg.png) repeat;
+  color: #666;
+  min-width: 1000px;
+}
+
+/* Header
+---------------------------------------------------------------------------------*/
+.header {
+
+}
+  .header > .container {
+    background: url(/img/hr.png) bottom center repeat-x;
+    height: 100px;
+    padding-top: 5.5rem;
+  }
+
+/* Header navigation
+---------------------------------------------------------------------------------*/
+.header-nav {
+  margin-top: 3.5rem;
+}
+  .header-nav_i {
+    font-size: 1.8rem;
+    margin-left: 3rem; 
+    text-transform: uppercase;
+  }
+  .header-nav_i:hover, .header-nav_i__current {color: #15cc39;}
+
+/* Section
+---------------------------------------------------------------------------------*/
+.section {
+
+}
+  .section > .container {
+    padding-top: 3rem;
+  }
+
+/* Forms
+---------------------------------------------------------------------------------*/
+.control {
+  margin-bottom: 2rem;
+}
+  .control label {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: .6rem;
+  }
+    .control label span {
+     font-size: 1.6rem;
+    }
+  .control input[type="text"] {
+    background: url(/img/input.png) center no-repeat;
+    border: none;
+    border-radius: 3px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 2rem;
+    height: 42px;
+    padding: 0 1rem;
+    width: 960px;
+  } 
+  .control textarea {
+    background: url(/img/textarea.png) center repeat;
+    border: none;
+    border-radius: 3px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 2rem;
+    height: 332px;
+    line-height: 30px;
+    overflow: auto;
+    padding: 1.5rem 1rem;
+    resize: none;
+    width: 960px;
+  }
+.control.submit {
+  text-align: right;
+} 
+  .control input[type="submit"] {
+    background: url(/img/submit.png) center no-repeat;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: 1.8rem;
+    height: 65px;
+    width: 134px;
+  } 
+  
+/* Select */
+.select {
+  background: url(/img/select.png) center no-repeat;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 1rem;
+  position: relative;
+  width: 576px;
+  z-index: 1000;
+}
+  .select_dropdown {
+    background: url(/img/select_dropdown.png) center no-repeat;
+    display: none;
+    height: 251px;
+    left: -3px;
+    padding: 0 1.3rem;
+    position: absolute;
+    top: 0;
+    width: 582px;
+    z-index: 1000;
+  }
+    .select_dropdown dd {
+      -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+              box-sizing: border-box;        
+      line-height: 41px;
+      position: relative;
+      z-index: 1000;
+    }
+    .select_dropdown dd:after {
+      background: #a1a1a1;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: -10px;
+      position: absolute;
+      right: -10px;
+      z-index: 1001;
+    }    
+    .select_dropdown dd:last-child:after {display: none;}
+      .select_dropdown dd a {
+        color: #666;
+      }
+      .select_dropdown dd a:hover {
+        color: #666;
+      }
+  .select_controls {
+    background: url(/img/select_controls.png) 0 0 no-repeat;
+    height: 42px;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 42px;
+    z-index: 1000;
+  }
+  .select_active .select_controls {
+    background-position: -42px 0;
+  }  
+
+.control input[type="text"],
+.control input[type="submit"],
+.control textarea,
+.control .select,
+.control .select_dropdown {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;  
+}  
+
+/* Footer
+---------------------------------------------------------------------------------*/
+.footer {
+  height: 60px;
+  line-height: 60px;
+}
+  .footer > .container {
+    background: url(/img/hr.png) top center repeat-x;
+  }
+  .footer_copyright {
+    color: #333;
+    font-size: 1.6rem;
+    text-align: right;
+  }
