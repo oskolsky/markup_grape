@@ -10,3 +10,4 @@ Grape
 | Условия                       | http://grape.oskolsky.com/terms.html           |
 | Поддержка                     | http://grape.oskolsky.com/support.html         |
 | Контакты                      | http://grape.oskolsky.com/contact.html         |
+| Гроздь                        | http://grape-bunch.oskolsky.com/index.html     |
