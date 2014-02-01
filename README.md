@@ -1,13 +1,9 @@
-Grape
-========
+# Grape
 
-Верстка проекта "Grape"
+Version: 1.0
 
-| Страница                      | Ссылка                                         |
-|-------------------------------|------------------------------------------------|
-| Главная                       | http://grape.oskolsky.com/index.html           |
-| О нас                         | http://grape.oskolsky.com/about.html           |
-| Условия                       | http://grape.oskolsky.com/terms.html           |
-| Поддержка                     | http://grape.oskolsky.com/support.html         |
-| Контакты                      | http://grape.oskolsky.com/contact.html         |
-| Гроздь                        | http://grape-bunch.oskolsky.com/index.html     |
+Updated: 1/02/2014
+
+## Credits
+
+* @oskolsky — Senior Frontend Developer
